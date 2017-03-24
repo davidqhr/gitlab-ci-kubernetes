@@ -45,5 +45,30 @@
 * 统一多种语言、框架的部署方式
 * 最小程度开放服务器权限
 
+#### 最终采取的方案
 
+gitlab + docker + kubernetes
 
+#### 目前的部署流程
+
+目前格子的开发到部署到上线的流程如下
+
+1. 新建branch开发需求
+2. commit
+3. push branch
+  - gitlab ci 构建此branch的image
+  - gitlab ci 将构建好的image提交到registry
+  - gitlab ci 在这个image的基础上运行测试
+  - gitlab ci 将这个image发布到sandbox环境中
+4. 创建merge request
+5. Code Review
+6. Merge Branch To Master
+  - gitlab ci 构建master的image
+  - gitlab ci 将构建好的image提交到registry
+  - gitlab ci 在这个image的基础上运行测试
+  - gitlab ci 将这个image发布到sandbox环境
+  - gitlab ci 将这个image发布到staging环境
+7. 确认staging环境代码工作正常
+8. 手动点击gitlab pipeline中的按钮，一键部署到production
+
+接下来的部分，我会向大家来介绍如何实现以上的部署方式
