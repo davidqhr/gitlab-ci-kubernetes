@@ -2,8 +2,6 @@
 
 有一篇很出名的文章：[https://circleci.com/blog/its-the-future/](https://circleci.com/blog/its-the-future/ "asdfasdf")，文章大意是一个boss想要部署一个简单的CRUL rails项目，他咨询一位专家，专家极力反对他将项目部署在heroku上，并给出的建议是将他的简单的app拆分成12个微服务\(microservices\)，运行在docker container中，彼此通过api调用。然后将这些微服务部署在一个由8台机器组成的kubernetes集群中。
 
-我在看到这篇文章的时候，并不是很理解拆分microservices来开发和部署的方式，没有体会到这样做有哪些优势。
-
 #### 当时课程格子的后端组织
 
 * 一个巨大rails项目，承载了app端的所有版本的api、很多h5页面、以及运营同学的运营工具
@@ -42,8 +40,6 @@
 * 简单的水平扩展
 * 部署出现问题，快速rollback
 * 统一多种语言、框架的部署方式
-
-
 
 
 
