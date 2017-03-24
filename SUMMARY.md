@@ -1,7 +1,7 @@
 # Summary
 
-* [引言](introduction.md)
-* [开始之前](kai-shi-zhi-qian.md)
+* [引言](README.md)
+* [开始之前](introduction.md)
 * [Docker](docker.md)
   * [安装docker](docker/an-zhuang-docker.md)
   * [12 Factor App](docker/12-factor-app.md)
