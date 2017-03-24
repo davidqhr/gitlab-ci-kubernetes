@@ -1,6 +1,6 @@
 # 引言
 
-有一篇很出名的文章：[https://circleci.com/blog/its-the-future/](It's the future)，文章大意是一个boss想要部署一个简单的CRUL rails项目，他咨询一位专家，专家极力反对他将项目部署在heroku上，并给出的建议是将他的简单的app拆分成12个微服务\(microservices\)，运行在docker container中，彼此通过api调用。然后将这些微服务部署在一个由8台机器组成的kubernetes集群中。
+有一篇很出名的文章：[It's the future](https://circleci.com/blog/its-the-future/)，文章大意是一个boss想要部署一个简单的CRUL rails项目，他咨询一位专家，专家极力反对他将项目部署在heroku上，并给出的建议是将他的简单的app拆分成12个微服务\(microservices\)，运行在docker container中，彼此通过api调用。然后将这些微服务部署在一个由8台机器组成的kubernetes集群中。
 
 初看这篇文章的时候，我并没有理解这种部署的优势。但随着之后课程格子在部署方式的改变，我重新回顾了这篇文章，发现当业务和服务复杂起来，这种拆分项目，使用kubernetes集群部署的优势。
 
