@@ -35,8 +35,6 @@
   * [Gemfile](an-li/gemfile.md)
   * [Dockerfile](an-li/dockerfile.md)
   * [kube-deployment.yml](an-li/kube-deploymentyml.md)
-* [nodejs项目案例](nodejsxiang-mu-an-li.md)
-  * [Dockerfile](dockerfile.md)
 * [深入原理](shen-ru-yuan-li.md)
   * linux namespace
   * docker fs
@@ -44,4 +42,6 @@
   * [kube-proxy如何用iptables实现service的load balance](shen-ru-yuan-li/iptable-load-balance.md)
   * [如何通过flannel实现pod之间的通信](shen-ru-yuan-li/flannel.md)
 * [nodejs项目案例](nodejsxiang-mu-an-li.md)
+  * [Dockerfile](dockerfile.md)
+* [作者](zuo-zhe.md)
 
