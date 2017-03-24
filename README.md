@@ -40,7 +40,7 @@
 * 简单的多环境部署 \(sandbox，staging，production\)
 * 进程监控、出错重启
 * 水平扩展简单(scaling)
-* 部署出现问题，快速rollback
+* 快速rollback
 * 统一多种语言、框架的部署方式
 * 最小程度开放服务器权限
 
