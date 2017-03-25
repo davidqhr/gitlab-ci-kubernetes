@@ -7,7 +7,7 @@
 
 项目以ruby为主，部署使用capstrano。
 
-#### 项目的水平扩展
+#### 项目部署的水平扩容
 
 * 在这台机器上添加负责部署的工程师public key
 * 为项目添加这台机器的public key作为deploy key
@@ -33,7 +33,7 @@
 * 自动化部署
 * 简单的多环境部署 \(sandbox，staging，production\)
 * 进程监控、出错重启
-* 水平扩展简单(scaling)
+* 部署水平扩容简单(scaling)
 * 部署期间服务可用(rolling update)
 * 部署出现问题时，能快速回滚(rollback)
 * 统一多种语言、框架的部署方式
@@ -60,9 +60,8 @@ gitlab + docker + kubernetes
   - gitlab ci 构建master的image
   - gitlab ci 将构建好的image提交到registry
   - gitlab ci 在这个image的基础上运行测试
-  - gitlab ci 将这个image发布到sandbox环境
   - gitlab ci 将这个image发布到staging环境
 7. 确认staging环境代码工作正常
 8. 手动点击gitlab pipeline中的按钮，一键部署到production
 
-接下来的部分，我会向大家来介绍如何实现以上的部署方式
+目前的部署方案，解决了上文提出的问题，也满足了上文提到的对部署方式的预期。接下来的部分，我会向大家来介绍如何实现以上的部署方式。在这之前，我需要了解一下[THE TWELVE-FACTOR APP](12-factor-app.md)。

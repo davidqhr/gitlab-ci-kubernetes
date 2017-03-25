@@ -2,25 +2,26 @@
 
 * [引言](README.md)
 * [开始之前](introduction.md)
+* [12 Factor App](12-factor-app.md)
 * [Docker](docker.md)
-  * [安装docker](docker/an-zhuang-docker.md)
-  * [12 Factor App](docker/12-factor-app.md)
-  * [为项目创建image](docker/wei-xiangmu-chuang-jian-image.md)
-  * [搭建docker registry](docker/da-jian-docker-registry.md)
-* [Gitlab CI/CD](da-jian-gitlab.md)
-  * [搭建Gitlab](da-jian-gitlab/da-jian-gitlab.md)
-  * [配置Gitlab Container Registry](da-jian-gitlab/pei-zhi-gitlab-container-registry.md)
-  * [配置Gitlab Runner](da-jian-gitlab/pei-zhi-gitlab-runner.md)
+  * [安装docker](docker/install.md)
+  * [创建项目image](docker/build-image.md)
+  * [运行项目image](docker/run-image.md)
+  * [搭建docker registry](docker/registry.md)
+* [Gitlab CI/CD](gitlab.md)
+  * [搭建Gitlab](gitlab/gitlab.md)
+  * [配置Gitlab Container Registry](gitlab/container-registry.md)
+  * [配置Gitlab Runner](gitlab/runner.md)
 * [kubernetes](kubernetes.md)
-  * 配置etcd
+  * [配置etcd](kubernetes/etcd.md)
   * [配置flannel](kubernetes/flannel.md)
-  * 配置docker
+  * [配置docker](kubernetes/docker.md)
   * [部署master](kubernetes/bu-shu-master.md)
     * kube-apiserver
     * kube-controller-manager
     * kube-scheduler
     * kube-dns
-  * [部署minions](kubernetes/bu-shu-slave.md)
+  * [部署minions](kubernetes/minion.md)
     * [kubelet](kubernetes/bu-shu-slave/kube-let.md)
     * [kube-proxy](kubernetes/bu-shu-slave/kube-proxy.md)
   * [部署dashboard](kubernetes/bu-shu-dashboard.md)
