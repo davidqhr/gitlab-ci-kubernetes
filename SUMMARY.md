@@ -8,6 +8,7 @@
   * [创建项目image](docker/build-image.md)
   * [运行项目image](docker/run-image.md)
   * [搭建docker registry](docker/registry.md)
+  * [国内网络环境](docker/GFW.md)
 * [Gitlab CI/CD](gitlab.md)
   * [搭建Gitlab](gitlab/gitlab.md)
   * [配置Gitlab Container Registry](gitlab/container-registry.md)
