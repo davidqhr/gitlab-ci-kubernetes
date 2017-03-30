@@ -48,7 +48,7 @@ RUN apt-get update && \
     apt-get clean
 ```
 
-更简单的方式是直接下载可运行的二进制程序，例如wkhtmltopdf，这样这个容易就可以轻易的使用wkhtmlto*命令导出pdf或图片了。一定要记得删除压缩的tar文件，这样可以使最终生成的docker image占用更少的磁盘空间
+更简单安装依赖的方式是直接下载可运行的二进制程序，例如wkhtmltopdf，这样这个容易就可以轻易的使用wkhtmlto*命令导出pdf或图片了。一定要记得删除压缩的tar文件，这样可以使最终生成的docker image占用更少的磁盘空间
 
 ```bash
 RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz && \
