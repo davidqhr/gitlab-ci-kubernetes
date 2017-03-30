@@ -46,4 +46,4 @@
   * [Dockerfile](dockerfile.md)
 * [Q&A](Q&A.md)
   * [如何监控pod状态](Q&A/ru-he-jian-kong-pod-zhuang-tai.md)
-* [作者](zuo-zhe.md)
+<!-- * [作者](zuo-zhe.md) -->
